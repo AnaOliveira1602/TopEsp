@@ -6,6 +6,8 @@ const AnotacaoController = require("./controller/AnotacaoController");
 //seçao para definiçao das rotas de anotaçoes
 rotas.get("/anotacoes", AnotacaoController.read);
 rotas.post("/anotacoes", AnotacaoController.create);
+rotas.delete("/anotacoes/:id", AnotacaoController.delete);
+rotas.post("/anotacoes/:id", AnotacaoController.update);
 
 //seçaopara definiçao das rotas dos clientes
 //rotas.get("/clientes", AnotacaoCliente.read);
